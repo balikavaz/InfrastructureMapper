@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+	<meta charset="UTF-8">
+	<title>Uredi zapis</title>
+	<!-- Bootstrap modul za CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- Prikaz svih opcija izmjene postojecih podataka u tablici KompletnaInfrastruktura -->
+<!-- Ovo je dio rubrike "Promjene" koju je moguce izagrabti na naslovnoj stranici index.html -->
+<div class="container mt-5">
+	<h3>Uredi zapis</h3>
+	<form method="post">
+		<div class="mb-3"><input type="text" name="ip_address" class="form-control" value="{{ zapis.ip_address }}" required></div>
+		<div class="mb-3"><input type="number" name="reputation" class="form-control" value="{{ zapis.reputation }}" required></div>
+		<div class="mb-3"><input type="text" name="internet_address" class="form-control" value="{{ zapis.internet_address }}" required></div>
+		<div class="mb-3"><input type="text" name="isp" class="form-control" value="{{ zapis.isp }}" required></div>
+		<div class="mb-3"><input type="text" name="country" class="form-control" value="{{ zapis.country }}" required></div>
+		<div class="mb-3"><input type="text" name="tor" class="form-control" value="{{ zapis.tor }}" required></div>
+		<div class="mb-3"><input type="text" name="tcp_ports" class="form-control" value="{{ zapis.tcp_ports }}" required></div>
+		<button type="submit" class="btn btn-primary">Spremi promjene</button>
+		<a href="{{ url_for('promjene') }}" class="btn btn-secondary">Odustani</a>
+	</form>
+</div>
+</body>
+</html>
