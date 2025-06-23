@@ -63,7 +63,6 @@ def sken():
 				isp = isp.strip()
 				country = country.strip()
 				tor = tor.strip()
-#				tcp_ports = tcp_ports.strip().strip('[]').replace(' ', '') or 'None'
 				tcp_ports = tcp_ports.strip().strip('[]') or 'None'
 
 				# Provjeri da li zapis već postoji
