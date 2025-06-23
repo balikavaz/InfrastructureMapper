@@ -27,6 +27,9 @@ Funkcionalnost u kojoj možemo pregledati sve informacije koje su prikupljene au
 ### Promjene
 Funkcionalnost u kojoj možemo pojedinačnim odabirom mijenjati, brisati ili dodavati zapise u bazi podataka.
 
+## Use case diagram
+
+![Infrastructure Mapper use case](https://github.com/balikavaz/InfrastructureMapper/blob/main/use_case_diagram.png)
 
 ## Instalacija i pokretanje
 Za instaliranje i pokretanje nužno je slijediti opisane korake.
